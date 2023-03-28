@@ -1,0 +1,47 @@
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.table thead th {
+  vertical-align: bottom;
+}
+
+thead th {
+  padding: 0.75rem;
+  vertical-align: top;
+}
+
+.alert-info {
+  color: #000000;
+  background-color: #dddddd;
+  border-color: #bee5eb;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.text-right {
+  text-align: right;
+}

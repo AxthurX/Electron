@@ -1,0 +1,162 @@
+<div #imprimir id="imprimir">
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <td>Bem Estar Climatização</td>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <td>Osmar leite</td>
+          <td>Centerclima@gmail.com</td>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <td>Rua do cravo</td>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <td>Porto velho - RO</td>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <td>CEP 76807874</td>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="font-size: 25px" colspan="4" class="text-center">
+          <div class="alert alert-info">
+            <p>ORDEM de servico ...</p>
+            <p>Instalação de ar condicionado na puta que pariu</p>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <td class="text-right"><b>Saldo novo</b></td>
+        <td>objBalanco.quantidade_produtos_lancados | number : "1.0-3"</td>
+        <td class="text-right"><b>Data</b></td>
+        <td>objBalanco.data | date : "dd/MM/yyyy HH:mm"</td>
+      </tr>
+      <tr>
+        <td class="text-right"><b>Local de estoque</b></td>
+        <td>
+          objBalanco.estoque_locais.id_erp - objBalanco.estoque_locais.descricao
+        </td>
+        <td class="text-right"><b>Qtde de produtos</b></td>
+        <td>objBalanco.produtos.length</td>
+      </tr>
+    </thead>
+  </table>
+  <br />
+  <table class="table">
+    <thead>
+      <tr class="alert alert-info">
+        <th style="font-size: 20px" colspan="6" class="text-center">
+          Informações Basicas
+        </th>
+      </tr>
+      <tr>
+        <th>Observações</th>
+      </tr>
+      <tr>
+        <th>
+          Os valores das instações são de acordo com a quantidade de aparelhos,
+          capacidade termica de cada um e dificuldades na execução do serviço
+          durante a obra e quantidade de material utilizado
+        </th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <br />
+  <table class="table">
+    <thead>
+      <tr class="alert alert-info">
+        <th style="font-size: 20px" colspan="6" class="text-center">
+          Serviços
+        </th>
+      </tr>
+      <tr class="alert alert-info">
+        <th>Descrição</th>
+
+        <th class="text-right">Saldo novo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-right">registro.valor_unitario | number : "1.2-2"</td>
+        <td class="text-right">registro.quantidade | number : "1.0-3"</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <table class="table">
+    <thead>
+      <tr class="alert alert-info">
+        <th style="font-size: 20px" colspan="6" class="text-center">Peças</th>
+      </tr>
+      <tr class="alert alert-info">
+        <th class="text-right">Vlr.Uni</th>
+        <th class="text-right">Saldo novo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-right">registro.valor_unitario | number : "1.2-2"</td>
+        <td class="text-right">registro.quantidade | number : "1.0-3"</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <table class="table">
+    <thead>
+      <tr class="alert alert-info">
+        <th style="font-size: 20px" colspan="6" class="text-center">
+          Pagamento
+        </th>
+      </tr>
+      <tr class="alert alert-info">
+        <th>Id</th>
+        <th>Descrição</th>
+        <th>Cód.Barras</th>
+        <th class="text-right">Vlr.Uni</th>
+        <th class="text-right">Saldo novo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>registro.id_produto_erp</td>
+        <td>registro.descricao</td>
+        <td>registro.gtin</td>
+        <td class="text-right">registro.valor_unitario | number : "1.2-2"</td>
+        <td class="text-right">registro.quantidade | number : "1.0-3"</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+
+  <table class="table">
+    <thead>
+      <tr class="alert alert-info">
+        <th style="font-size: 20px" colspan="6" class="text-center">
+          Garantia
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-right">registro.quantidade | number : "1.0-3"</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+</div>
